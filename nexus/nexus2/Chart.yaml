@@ -1,0 +1,9 @@
+apiVersion: v2
+appVersion: 2.14.18-01
+description: A Helm chart for Kubernetes
+maintainers:
+- email: lucas.hahn@novum-rgi.de
+  name: Lucas Hahn
+name: nexus2
+type: application
+version: 0.1.1
