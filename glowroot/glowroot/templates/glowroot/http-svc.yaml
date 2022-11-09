@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "glowroot.fullname" . }}
+  labels:
+    {{- include "glowroot.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.http.type }}
+  ports:
+    - port: {{ .Values.service.http.port }}
+      targetPort: ui-http
+      protocol: TCP
+      name: ui-http
+  selector:
+    {{- include "glowroot.selectorLabels" . | nindent 4 }}

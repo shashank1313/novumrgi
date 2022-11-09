@@ -1,0 +1,14 @@
+apiVersion: v2
+appVersion: 0.13.7
+dependencies:
+- name: cassandra
+  repository: https://charts.bitnami.com/bitnami
+  version: 5.5.0
+description: Helm chart for glowroot
+icon: https://glowroot.org/images/favicon-440x440.22b5b3f3.png
+maintainers:
+- email: lucas.hahn@novum-rgi.de
+  name: Lucas Hahn
+name: glowroot
+type: application
+version: 1.0.4
