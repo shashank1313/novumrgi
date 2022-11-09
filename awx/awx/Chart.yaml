@@ -1,0 +1,13 @@
+apiVersion: v2
+appVersion: 15.0.0
+dependencies:
+- name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 9.8.1
+description: Helm chart for AWX 15.0.0
+maintainers:
+- email: lucas.hahn@novum-rgi.de
+  name: Lucas Hahn
+name: awx
+type: application
+version: 0.1.4
