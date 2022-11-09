@@ -1,0 +1,26 @@
+apiVersion: v2
+appVersion: 3.8.0
+dependencies:
+- condition: dependencyTrack.database.builtIn.postgresql.enabled
+  name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 9.7.2
+description: Dependency Track helm chart
+home: https://dependencytrack.org/
+icon: https://github.com/DependencyTrack/branding/blob/master/dt-logo-black-text.svg
+keywords:
+- security
+- dependency
+- dependency-track
+- OWASP
+- Supply Chain Component Analysis
+maintainers:
+- email: lucas.hahn@novum-rgi.de
+  name: Lucas Hahn
+name: dependency-track
+sources:
+- https://github.com/novumrgi/helm
+- https://github.com/DependencyTrack/dependency-track
+- https://hub.docker.com/r/owasp/dependency-track
+type: application
+version: 0.1.8
